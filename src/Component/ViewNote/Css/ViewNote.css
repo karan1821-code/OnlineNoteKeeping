@@ -1,0 +1,40 @@
+#main-content {
+    margin-left: 210px;
+    
+}
+
+.wrapper {
+    display: inline-block;
+    margin-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    width: 100%;
+    word-wrap:break-word;
+}
+
+
+.tbl-holder{border:1px solid #ddd;border-radius:25px;overflow: hidden;position: relative;} 
+
+
+
+.mt {
+    margin-top: 25px;
+}
+
+
+.table thead tr{background-color: #3da0de ;color: #ffffff;}
+.tbl-ticker thead tr th:nth-child(1), .tbl-ticker tbody tr td:nth-child(1){width:55%;word-break: break-all;}
+.tbl-ticker thead tr th:nth-child(2), .tbl-ticker tbody tr td:nth-child(2),
+.tbl-ticker thead tr th:nth-child(3), .tbl-ticker tbody tr td:nth-child(3),
+.tbl-ticker thead tr th:nth-child(4), .tbl-ticker tbody tr td:nth-child(4)
+{width:15%;word-break: break-all;}
+
+
+@media screen and (max-width: 768px) {
+    .tbl-hhide{position: absolute;top: -9999px;left: -9999px;}
+    .mob-tbl{border: none !important;border-top-left-radius: 27px;overflow: hidden;}
+    .tbl-ticker tbody td:before {content: attr(data-th);font-weight: bold;display: inline-block;width: 30%;background: none repeat scroll 0% 0% #3da0de;padding: 0.6rem;left: 0px;position:absolute;margin-right: 10px;color: #ffffff;top: 0;bottom:0;white-space:nowrap;}
+
+}

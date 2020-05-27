@@ -1,0 +1,36 @@
+#main-content {
+    margin-left: 210px;
+    
+}
+
+.tbl-holder{border:1px solid #ddd;border-radius:25px;overflow: hidden;position: relative;} 
+.table thead tr{background-color: #3da0de ;color: #ffffff;}
+
+.tbl-ticker{margin-bottom: 0 !important;}
+.tbl-ticker thead tr th:nth-child(1), .tbl-ticker tbody tr td:nth-child(1){width:55%;word-break: break-all;}
+.tbl-ticker thead tr th:nth-child(2), .tbl-ticker tbody tr td:nth-child(2),
+.tbl-ticker thead tr th:nth-child(3), .tbl-ticker tbody tr td:nth-child(3),
+.tbl-ticker thead tr th:nth-child(4), .tbl-ticker tbody tr td:nth-child(4)
+{width:15%;word-break: break-all;}
+.black-text{color:#000000;}
+
+@media screen and (max-width: 768px) {
+ 
+    .tbl-ticker tbody tr td {border-top: none !important;border-bottom: 1px solid #e3e6ec !important;position: relative !important;width:100% !important;text-align:left !important;padding:6px 6px 6px 32% !important;min-height: 40px !important;border-right:none !important;}
+ 
+    .tbl-ticker tbody td:before {content: attr(data-th);font-weight: bold;display: inline-block;width: 30%;background: none repeat scroll 0% 0% #3da0de;padding: 0.6rem;left: 0px;position:absolute;margin-right: 10px;color: #ffffff;top: 0;bottom:0;white-space:nowrap;}
+    .tbl-hhide{position: absolute;top: -9999px;left: -9999px;}
+    .yscroll{overflow-y:scroll}
+    .mob-tbl{border: none !important;border-top-left-radius: 27px;overflow: hidden;}
+  
+    .tbwdth{width:100% !important}
+
+    /*td:nth-of-type(1):before { content: "First Name"; }*/
+    } 
+
+
+    @media (min-width: 768px) {
+        .form-horizontal .control-label {
+        text-align: left;
+    }
+}
